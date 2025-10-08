@@ -1,0 +1,83 @@
+.cutting-container {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.cutting-video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Timeline wrapper */
+.timeline-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.timeline {
+  position: relative;
+  height: 80px;
+  background: #222;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Thumbnails bar */
+.timeline-thumbs {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.timeline-thumbs img {
+  flex: 1;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* Chunks */
+.chunk {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 128, 255, 0.5);
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+/* Playhead */
+.playhead {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: red;
+  transform: translateX(-1px);
+}
+
+.add-chunk-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-chunk-btn:hover {
+  background: #0056b3;
+}
+
+.chunk-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  text-align: left;
+}
